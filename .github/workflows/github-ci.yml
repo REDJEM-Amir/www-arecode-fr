@@ -1,0 +1,52 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy-via-sftp:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Stop pm2 
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SERVER }}
+          username: ${{ secrets.USERNAME }}
+          port: ${{ secrets.PORT }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            if pm2 describe arecode.fr > /dev/null
+            then
+              pm2 delete arecode.fr
+            else
+              echo "arecode.fr does not exist"
+            fi
+
+      - name: Send Files to Server
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.1
+        with:
+          username: ${{ secrets.USERNAME }}
+          server: ${{ secrets.SERVER }}
+          port: ${{ secrets.PORT }}
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          local_path: ./*
+          remote_path: /var/www/arecode/
+          args: '-o ConnectTimeout=30' 
+
+      - name: Install/Run App
+        uses: appleboy/ssh-action@master 
+        with:
+          host: ${{ secrets.SERVER }}
+          username: ${{ secrets.USERNAME }}
+          port: ${{ secrets.PORT }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd ../../var/www/arecode/frontend/
+            npm install
+            npm run build
+            pm2 start npm --name "arecode.fr" -- run start 
