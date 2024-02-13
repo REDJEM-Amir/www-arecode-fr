@@ -1,7 +1,6 @@
 import React from 'react'
 import css from '@/styles/feed.module.css'
-import { LuLinkedin } from 'react-icons/lu'
-import { LiaLinkedin, LiaLinkedinIn } from 'react-icons/lia'
+import { LiaLinkedinIn } from 'react-icons/lia'
 
 const feed = () => {
   return (
