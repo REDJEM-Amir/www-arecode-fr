@@ -1,7 +1,7 @@
 import React from 'react'
-import css from '@/styles/containerFeed.module.css'
+import css from '@/styles/containerCol.module.css'
 
-const ContainerFeed = ({
+const ContainerCol = ({
   children
 }:{
   children?: React.ReactNode;
@@ -13,4 +13,4 @@ const ContainerFeed = ({
   )
 }
 
-export default ContainerFeed
+export default ContainerCol

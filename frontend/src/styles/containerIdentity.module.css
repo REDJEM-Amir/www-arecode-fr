@@ -1,0 +1,10 @@
+.container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding-left: 8vw;
+    padding-top: 3.3vw;
+    gap: 1.8vw;
+    width: 40vw;
+    height: 100vh;
+  }
