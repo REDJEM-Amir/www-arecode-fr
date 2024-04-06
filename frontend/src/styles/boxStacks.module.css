@@ -1,0 +1,13 @@
+.link {
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+    height: 10vw;
+    width: 10vw;
+}

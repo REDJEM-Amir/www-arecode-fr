@@ -2,36 +2,29 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 0.5vw;
-    line-height: 1.5vw;
+    line-height: 2vw;
 }
 
 .title {
-    font-size: 2.2vw;
-    font-weight: 600;
+    font-size: 3vw;
+    font-weight: 700;
     padding-left: 0.3vw;
+    padding-top: 2vw;
 }
 
 .poste {
-    font-size: 1.05vw;
-    font-weight: 300;
+    font-size: 1.5vw;
+    font-weight: 400;
     color: #565656;
     padding-left: 0.3vw;
     margin-top: 0.8vw;
+    padding-top: 1.2vw;
 }
 
-.resumePartOne {
-    font-size: 1.05vw;
-    font-weight: 300;
+.resume {
+    font-size: 1.5vw;
+    font-weight: 400;
     color: #565656;
     padding-left: 0.3vw;
-    padding-right: 14.5vw;
-}
-
-.resumePartTwo {
-    font-size: 1.05vw;
-    font-weight: 300;
-    color: #565656;
-    padding-left: 0.3vw;
-    padding-right: 14.5vw;
+    padding-top: 1.2vw;
 }

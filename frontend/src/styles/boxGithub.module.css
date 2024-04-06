@@ -5,10 +5,10 @@
 
 .container {
     position: relative;
-    background-color: rgba(10, 102, 194, 0.1);
+    background-color: white;
     width: 26vw;
     height: 9vw;
-    margin-left: 2.5vw;
+    margin-left: 1vw;
     padding: 1.8vw;
     border-radius: 1.8vw;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -20,7 +20,7 @@
 .container:hover {
     transition: 1s;
     transform: scale(0.98);
-    background-color: rgba(10, 102, 194, 0.2);
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 .contentOne {
@@ -36,12 +36,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #0a66c2;
+    background-color: black;
     border-radius: 0.8vw;
     padding: 0.4vw;
 }
 
-.iconLinkedin {
+.icon {
     font-size: 2vw;
     color: white;
 }
@@ -54,8 +54,8 @@
     padding: 0.6vw;
     padding-left: 1vw;
     padding-right: 1vw;
-    background-color: #0a66c2;
-    border: 1px solid #0a66c2;
+    background-color: black;
+    border: 1px solid black;
     border-radius: 1.5vw;
     cursor: pointer;
     transition: 0.5s;
@@ -65,7 +65,7 @@
     transition: 1s;
     background-color: white;
     .btn {
-        color: #0a66c2;
+        color: black;
         transition: 1s;
     }
 }
