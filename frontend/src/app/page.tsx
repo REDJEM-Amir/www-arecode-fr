@@ -7,8 +7,11 @@ import SectionTitle from "@/components/SectionTitle";
 import BoxLinkedin from "@/components/BoxLinkedin";
 import BoxGithub from "@/components/BoxGithub";
 import BoxStacks from "@/components/BoxStacks";
+import BoxProject from "@/components/BoxProject";
 
 export default function Home() {
+  const descriptionProjectOne = `Ce projet est mon test d'admission à La Plateforme, visant à créer le jeu "Motus" selon des directives spécifiques, avec la technologie de mon choix. Il démontre mes compétences en développement lo…`
+  const descriptionProjectTwo = `Ce projet vise à développer une solution web complète pour la gestion efficace d'une bibliothèque municipale. En utilisant les framework Symfony et NextJS, cette plateforme offre un écosystème numé…`
   return (
     <ContainerRow>
       <ContainerIdentity>
@@ -29,6 +32,12 @@ export default function Home() {
           <BoxStacks href="https://symfony.com/" img={"/symfony.png"} title={"Symfony Framework"} />
         </ContainerRow>
         <SectionTitle title="Quelques réalisations" />
+        <ContainerRow>
+          <BoxProject title="LaPlateforme_Molus" img={"/LaPlateforme_Molus.png"} href={"https://molus.arecode.fr"} resumeRight={descriptionProjectOne} />
+        </ContainerRow>
+        <ContainerRow>
+          <BoxProject title="Library" img={"/library.svg"} href={"https://library.arecode.fr"} resumeLeft={descriptionProjectTwo} />
+        </ContainerRow>
       </ContainerFeed>
     </ContainerRow>
   );
