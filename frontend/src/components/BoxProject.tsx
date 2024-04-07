@@ -22,7 +22,7 @@ const BoxProject = ({
           <div className={css.resume}>{resumeLeft}</div>
         </div>
       )}
-      <Link className={css.link} href={href}>
+      <Link className={css.link} href={href} target='_blank'>
         <div className={css.contentCard}>
           <img className={css.img} src={img} alt={title} />
         </div>
