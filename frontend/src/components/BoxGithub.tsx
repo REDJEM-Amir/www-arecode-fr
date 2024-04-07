@@ -5,7 +5,7 @@ import { LiaGithub } from 'react-icons/lia'
 
 const BoxGithub = () => {
   return (
-    <Link className={css.link} href="https://github.com/REDJEM-Amir">
+    <Link className={css.link} href="https://github.com/REDJEM-Amir"  target='_blank'>
     <div className={css.container}>
       <div className={css.contentOne}>
         <div className={css.contentLogo}>

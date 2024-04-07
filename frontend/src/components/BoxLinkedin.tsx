@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const BoxLinkedin = () => {
   return (
-    <Link className={css.link} href="https://www.linkedin.com/in/amir-redjem-963049230/">
+    <Link className={css.link} href="https://www.linkedin.com/in/amir-redjem-963049230/"  target='_blank'>
       <div className={css.container}>
         <div className={css.contentOne}>
           <div className={css.contentLogo}>

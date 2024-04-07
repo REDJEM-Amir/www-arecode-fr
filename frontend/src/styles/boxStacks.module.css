@@ -8,6 +8,34 @@
     display: flex;
     flex-direction: column;
     padding: 2vw;
-    height: 10vw;
-    width: 10vw;
+    margin-left: 2.5vw;
+    border-radius: 1.8vw;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    height: 8.5vw;
+    width: 8.5vw;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.container:hover {
+    transition: 1s;
+    filter: brightness(50%);
+    transform: translateY(-1vw);
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.contentImg {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.img {
+    position: relative;
+    width: 8vw;
 }

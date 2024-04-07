@@ -6,6 +6,7 @@ import ContainerIdentity from "@/components/ContainerIdentity";
 import SectionTitle from "@/components/SectionTitle";
 import BoxLinkedin from "@/components/BoxLinkedin";
 import BoxGithub from "@/components/BoxGithub";
+import BoxStacks from "@/components/BoxStacks";
 
 export default function Home() {
   return (
@@ -21,6 +22,12 @@ export default function Home() {
           <BoxGithub />
         </ContainerRow>
         <SectionTitle title="Stacks technique" />
+        <ContainerRow>
+          <BoxStacks href="https://nextjs.org/" img={"/nextjs.svg"} title={"NextJS Framework"} />
+          <BoxStacks href="https://spring.io/" img={"/spring.png"} title={"Spring Boot Framework"} />
+          <BoxStacks href="https://nestjs.com/" img={"/nestjs.png"} title={"NestJS Framework"} />
+          <BoxStacks href="https://symfony.com/" img={"/symfony.png"} title={"Symfony Framework"} />
+        </ContainerRow>
         <SectionTitle title="Quelques réalisations" />
       </ContainerFeed>
     </ContainerRow>
