@@ -33,7 +33,7 @@ export default function Home() {
         </ContainerRow>
         <SectionTitle title="Quelques réalisations" />
         <ContainerRow>
-          <BoxProject title="LaPlateforme_Molus" img={"/LaPlateforme_Molus.png"} href={"https://molus.arecode.fr"} resumeRight={descriptionProjectOne} />
+          <BoxProject title="LaPlateforme_Molus" img={"/LaPlateforme_Molus.png"} href={"https://motus.arecode.fr"} resumeRight={descriptionProjectOne} />
         </ContainerRow>
         <ContainerRow>
           <BoxProject title="Library" img={"/library.svg"} href={"https://library.arecode.fr"} resumeLeft={descriptionProjectTwo} />
